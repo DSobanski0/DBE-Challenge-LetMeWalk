@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/letmewalk
+    username: postgres
+    password: docker
+  jpa: 
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    open-in-view: true
+    hibernate.ddl-auto: update
+    properties: 
+      hibernate.format_sql: true
+  
+server.port: 8080
+
+springdoc.swagger-ui.path: /swagger-ui
+springdoc.swagger-ui.disable-swagger-default-url: true
